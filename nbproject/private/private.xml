@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <data xmlns="http://www.netbeans.org/ns/make-project-private/1">
+        <activeConfTypeElem>1</activeConfTypeElem>
+        <activeConfIndexElem>0</activeConfIndexElem>
+    </data>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/williamhong/Documents/PEY/ShipmentStats/Reader.cpp</file>
+            <file>file:/Users/williamhong/Documents/PEY/ShipmentStats/main.cpp</file>
+            <file>file:/Users/williamhong/Documents/PEY/ShipmentStats/ArgsParser.cpp</file>
+            <file>file:/Users/williamhong/Documents/PEY/ShipmentStats/Calculator.h</file>
+            <file>file:/Users/williamhong/Documents/PEY/ShipmentStats/Reader.h</file>
+            <file>file:/Users/williamhong/Documents/PEY/ShipmentStats/Writer.cpp</file>
+            <file>file:/Users/williamhong/Documents/PEY/ShipmentStats/Formatter.cpp</file>
+            <file>file:/Users/williamhong/Documents/PEY/ShipmentStats/ArgsParser.h</file>
+            <file>file:/Users/williamhong/Documents/PEY/ShipmentStats/ShipmentRow.h</file>
+            <file>file:/Users/williamhong/Documents/PEY/ShipmentStats/Formatter.h</file>
+            <file>file:/Users/williamhong/Documents/PEY/ShipmentStats/Calculator.cpp</file>
+            <file>file:/Users/williamhong/Documents/PEY/ShipmentStats/ShipmentRow.cpp</file>
+        </group>
+    </open-files>
+</project-private>
