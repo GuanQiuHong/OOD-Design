@@ -34,7 +34,7 @@ Program enters this stage, after having accepted the adapted data from Reader.
 
 Program enters this stage, after having accepted results from Calculator, in a format that is efficient to access/work on. 
 
-Writer is composed of **Formatter** rather than an inheritance of Formatter. 
+Writer is composed of **Formatter** rather than an __inheritance__ of Formatter. 
 We choose composition over inheritance here because, in this context it doesn’t make sense to inherit. Formatter and writer are separate concepts! To inherit would imply there’s some base class that exhibits traits of both a Writer and a Formatter...
 Instead, we write a Formatter separately; the Formatter:
 	1. Take the results from calculator and organize them in Strings, that adhere to the final expected output.
