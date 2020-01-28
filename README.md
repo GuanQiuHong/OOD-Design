@@ -6,12 +6,12 @@ S.O.L.I.D. design principles were used to maximize extendability, testability, a
 Below is a high level description of what each class expects and is responsible to output.
 
 **ArgsParser**
-	Parses the command line input for a file name, where the data is coming from. 
-	Expected use: ./main fileName, or ./main -f fileName would check for whether that file exists in the directory. If it does, pass the name on to Reader. If not, report an error, and exit the program.
+Parses the command line input for a file name, where the data is coming from. 
+Expected use: ./main shipmentStats.csv, or ./main -f shipmentStats.csv would check for whether that file exists in the directory. If it does, pass the name on to Reader. If not, report an error, and exit the program.
 
-	ArgsParser is helpful because, 
-	- if there were several different files containing similar data, e.g. one for China -> Hong Kong -> USA -> Canada and another for, say, Vietnam -> Philippines -> Mexico -> Canada, it’d be convenient for the user to switch the file names to analyze different datasets.
-	- if a garbage name is entered by the user, the program can stop execution right away.
+ArgsParser is helpful because, 
+- if there were several different files containing similar shipmentStats.csv data, e.g. one for China -> Hong Kong -> USA -> Canada and another for, say, Vietnam -> Philippines -> Mexico -> Canada, it’d be convenient for the user to switch the file names to analyze different datasets.
+- if a garbage name is entered by the user, the program can stop execution right away.
 
 **Reader**
 Program enters this stage, after having accepted a valid file name from ArgsParser.
@@ -21,12 +21,12 @@ The reader
 3. in case of invalid rows, like a row with an empty cell, skip the row and move on to the next.
 3. return this properly adapted data, in a format that’s easy for the calculator to work on.
 
-Calculator
+**Calculator**
 Program enters this stage, after having accepted the adapted data from Reader. 
 1. The calculator performs the necessary calculations, using the data from reader.
 2. The calculator should return the results in a predefined order/format, such that it’s easy for the Writer to work on. 
 
-Writer
+**Writer**
 Program enters this stage, after having accepted results from Calculator, in a format that is efficient to access/work on. 
 
 Writer is composed of Formatter rather than an inheritance of Formatter. 
