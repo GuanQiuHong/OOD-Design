@@ -6,15 +6,14 @@ S.O.L.I.D. design principles were used to maximize extendability, testability, a
 Below is a high level description of what each class expects and is responsible to output.
 
 **ArgsParser**
+	Parses the command line input for a file name, where the data is coming from. 
+	Expected use: ./main fileName, or ./main -f fileName would check for whether that file exists in the directory. If it does, pass the name on to Reader. If not, report an error, and exit the program.
 
-Parses the command line input for a file name, where the data is coming from. 
-Expected use: ./main fileName, or ./main -f fileName would check for whether that file exists in the directory. If it does, pass the name on to Reader. If not, report an error, and exit the program.
+	ArgsParser is helpful because, 
+	- if there were several different files containing similar data, e.g. one for China -> Hong Kong -> USA -> Canada and another for, say, Vietnam -> Philippines -> Mexico -> Canada, it’d be convenient for the user to switch the file names to analyze different datasets.
+	- if a garbage name is entered by the user, the program can stop execution right away.
 
-ArgsParser is helpful because, 
-- if there were several different files containing similar data, e.g. one for China -> Hong Kong -> USA -> Canada and another for, say, Vietnam -> Philippines -> Mexico -> Canada, it’d be convenient for the user to switch the file names to analyze different datasets.
-- if a garbage name is entered by the user, the program can stop execution right away.
-
-Reader
+**Reader**
 Program enters this stage, after having accepted a valid file name from ArgsParser.
 The reader 
 1. reads from file.
