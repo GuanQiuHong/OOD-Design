@@ -5,7 +5,8 @@ S.O.L.I.D. design principles were used to maximize extendability, testability, a
 
 Below is a high level description of what each class expects and is responsible to output.
 
-ArgsParser
+**ArgsParser**
+
 Parses the command line input for a file name, where the data is coming from. 
 Expected use: ./main fileName, or ./main -f fileName would check for whether that file exists in the directory. If it does, pass the name on to Reader. If not, report an error, and exit the program.
 
