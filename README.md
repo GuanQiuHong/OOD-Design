@@ -1,7 +1,7 @@
 # OOD-Design
 Practice project with object oriented programming. Abstracting a concrete application about shipment logistics into classes with distinct responsibility.
 
-S.O.L.I.D. design principles were used to maximize extendability, testability, and robustness against change.
+S.O.L.I.D. design principles were used to maximize extendability, testability, and robustness despite change.
 
 Below is a high level description of what each class expects and is responsible to output.
 
