@@ -6,6 +6,7 @@ S.O.L.I.D. design principles were used to maximize extendability, testability, a
 Below is a high level description of what each class expects and is responsible to output.
 
 **ArgsParser**
+
 Parses the command line input for a file name, where the data is coming from. 
 Expected use: ./main shipmentStats.csv, or ./main -f shipmentStats.csv would check for whether that file exists in the directory. If it does, pass the name on to Reader. If not, report an error, and exit the program.
 
@@ -14,6 +15,7 @@ ArgsParser is helpful because,
 - if a garbage name is entered by the user, the program can stop execution right away.
 
 **Reader**
+
 Program enters this stage, after having accepted a valid file name from ArgsParser.
 The reader 
 1. reads from file.
@@ -22,11 +24,13 @@ The reader
 3. return this properly adapted data, in a format that’s easy for the calculator to work on.
 
 **Calculator**
+
 Program enters this stage, after having accepted the adapted data from Reader. 
 1. The calculator performs the necessary calculations, using the data from reader.
 2. The calculator should return the results in a predefined order/format, such that it’s easy for the Writer to work on. 
 
 **Writer**
+
 Program enters this stage, after having accepted results from Calculator, in a format that is efficient to access/work on. 
 
 Writer is composed of Formatter rather than an inheritance of Formatter. 
